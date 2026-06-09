@@ -8,7 +8,9 @@ const truncateText = (text: string, maxLength = 50) => {
   return `${text.slice(0, maxLength)}...`;
 };
 
-const URL_BASE = import.meta.env.VITE_APP_URL_BASE || "http://localhost:3000";
+const URL_BASE =
+  import.meta.env.VITE_APP_URL_BASE ||
+  "https://nestjsurlapp-production.up.railway.app";
 
 export default function UrlTable() {
   const { data, isLoading } = useUrls();
